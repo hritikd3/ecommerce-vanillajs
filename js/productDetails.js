@@ -8,7 +8,7 @@ function loadProductDetails() {
         productId,
         userId: localStorage.getItem("userId")
     };
-    fetch('http://localhost:4000/api/v1/product/details', {
+    fetch(BASE_URL + '/api/v1/product/details', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ function addToCartFn() {
         productId,
         userId: localStorage.getItem("userId")
     };
-    fetch('http://localhost:4000/api/v1/order/add', {
+    fetch(BASE_URL + '/api/v1/order/add', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',

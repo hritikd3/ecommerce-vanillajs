@@ -4,7 +4,7 @@ const searchInput = document.getElementById("searchInput");
 let query = '';
 
 function loadCategories() {
-    fetch('http://localhost:4000/api/v1/category/all', {
+    fetch(BASE_URL + '/api/v1/category/all', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ function loadProducts() {
     if(window.location.search) {
         data.categoryId = window.location.search.split("=")[1];
     }
-    fetch('http://localhost:4000/api/v1/product/all', {
+    fetch(BASE_URL + '/api/v1/product/all', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ function searchProduct(e) {
     if(window.location.search) {
         data.categoryId = window.location.search.split("=")[1];
     }
-    fetch('http://localhost:4000/api/v1/product/all', {
+    fetch(BASE_URL + '/api/v1/product/all', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',

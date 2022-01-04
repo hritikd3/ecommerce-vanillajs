@@ -30,7 +30,7 @@ function loginFn() {
             username: loginUsername.value,
             password: loginPassword.value
         };
-		fetch('http://localhost:4000/api/v1/user/login', {
+		fetch(BASE_URL + '/api/v1/user/login', {
 			method: 'POST', // or 'PUT'
 			headers: {
 				'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ function signupFn() {
             username: signupUsername.value,
             password: signupPassword.value
         };
-		fetch('http://localhost:4000/api/v1/user/signup', {
+		fetch(BASE_URL + '/api/v1/user/signup', {
 			method: 'POST', // or 'PUT'
 			headers: {
 				'Content-Type': 'application/json',

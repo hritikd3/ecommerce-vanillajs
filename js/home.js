@@ -1,7 +1,7 @@
 const categoryList = document.getElementById("categoryList");
 
 function loadCategories() {
-    fetch('http://localhost:4000/api/v1/category/all', {
+    fetch(BASE_URL + '/api/v1/category/all', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',

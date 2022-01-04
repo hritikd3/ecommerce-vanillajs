@@ -8,7 +8,7 @@ function loadOrderDetails() {
     const data = {
         userId: localStorage.getItem("userId")
     };
-    fetch('http://localhost:4000/api/v1/order/details', {
+    fetch(BASE_URL + '/api/v1/order/details', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
@@ -74,7 +74,7 @@ function confirmPayment() {
         payment: true
     };
 
-    fetch('http://localhost:4000/api/v1/order/edit', {
+    fetch(BASE_URL + '/api/v1/order/edit', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',

@@ -5,7 +5,7 @@ function loadOrderDetails() {
     const data = {
         userId: localStorage.getItem("userId")
     };
-    fetch('http://localhost:4000/api/v1/order/details', {
+    fetch(BASE_URL + '/api/v1/order/details', {
         method: 'POST', // or 'PUT'
         headers: {
             'Content-Type': 'application/json',
