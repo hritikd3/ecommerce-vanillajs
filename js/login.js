@@ -24,7 +24,7 @@ function loginFn() {
 	if (loginUsername.value == "") {
 		updateAuthErrorMsg("Username should not be empty");
 	} else if (loginPassword.value == "") {
-		updateAuthErrorMsg("Password should not be empty");
+		updateAuthErrorMsg("Fill the password, it should not bee empty");
 	} else {
 		const data = {
             username: loginUsername.value,
