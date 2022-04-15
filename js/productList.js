@@ -80,7 +80,7 @@ function searchProduct(e) {
     };
 
     if(window.location.search) {
-        data.categoryId = window.location.search.split("=")[1];
+        data.categoryId = window.location.search.split("=")[1]
     }
     fetch(BASE_URL + '/api/v1/product/all', {
         method: 'POST', // or 'PUT'
