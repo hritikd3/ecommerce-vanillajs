@@ -9,7 +9,7 @@ const loginPassword = document.getElementById("loginPassword");
 const signupUsername = document.getElementById("signupUsername");
 const signupPassword = document.getElementById("signupPassword");
 const authErrMsg = document.getElementById("authErrMsg");
-
+const BASE_URL = "http://13.235.87.215:4000";
 function showSignup() {
 	signupForm.classList.remove('d-none');
 	loginForm.classList.add('d-none');
